@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import fetch_notifications,create_notification,view_notification,delete_notification,update_notification
+from notification_app.api_definitions import fetch_notifications,create_notification,view_notification,delete_notification,update_notification
 
 urlpatterns = [
     path('create_notifications', create_notification, name='create_notification'),
